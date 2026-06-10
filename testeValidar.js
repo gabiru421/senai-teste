@@ -6,6 +6,7 @@ console.log("Iniciando testes de validação Estrutural....\n");
 
 try{
     const candidatoValido = {
+        
         nome:"Carlos",
         habilidades:["Javascript, SQL"]
 
