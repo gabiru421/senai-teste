@@ -1,13 +1,12 @@
-const { dividir } = require("./calculadora");
+const { soma } = require('./calculadora');
 
-function testeDivisaoSimples() {
-    const resultado = dividir(10, 2);
+console.log("Iniciando testes da Calculadora...\n");
 
-    if (resultado != 5) {
-        throw new Error("teste falhou: esperando 5");
-    }
+const resultadoEsperado = 5;
+const resultadoObtido = soma(2, 3);
 
-    console.log("teste passou: divisao simples");
+if (resultadoObtido !== resultadoEsperado) {
+    throw new Error("Teste Falhou: Esperava ${resultadoEsperado}, mas recebeu ${resultadoObtido}");
 }
 
-testeDivisaoSimples();
+console.log("✅ Teste 1: soma(2, 3) passou com sucesso!");

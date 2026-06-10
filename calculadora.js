@@ -1,7 +1,9 @@
-function dividir(a, b) {
-    return a / b;
-}
+const soma = (a, b) => {
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        throw new Error("Os parâmetros devem ser números");
+    }
 
-module.exports = {
-    dividir
+    return a + b;
 };
+
+module.exports = { soma };
